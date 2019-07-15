@@ -1,6 +1,6 @@
-function readableTime(i) {
-    if(i<10) 
-}
+// function readableTime(i) {
+//     if(i<10) 
+// }
 
 
 
