@@ -1,6 +1,10 @@
 var btn = document.querySelector('#VinResponse');
-
 //functions below
+
+function finalText(timeStamper) {
+    document.querySelector('#outputField').innerHTML = ("Some reuired stuff followed by a date ");
+    document.querySelector('#outputField').append(timeStamper);
+}
 //todo make astring
 
 
@@ -12,5 +16,7 @@ btn.addEventListener('click', function (event) {
     var year = currentDate.getFullYear();
     var hour = currentDate.getHours();
     var timeStamper = " " +  month +  "/" + date + "/" + year + " " + "this is line 30";
-    document.querySelector('#outputField').append(timeStamper);
+    finalText(timeStamper);
 }, false);
+
+
